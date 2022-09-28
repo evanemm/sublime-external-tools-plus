@@ -73,9 +73,19 @@ class ExternalToolsRunCommand(sublime_plugin.WindowCommand):
 
         view = self.window.active_view()
         region = view.sel()[0]
-        lines = view.line(region)
-        variables['line_begin'] = str(view.rowcol(lines.begin())[0] + 1)
-        variables['line_end'] = str(view.rowcol(lines.end())[0] + 1)
+
+        line_begin, col_begin = view.rowcol(region.a)
+        line_begin += 1
+        col_begin += 1
+        line_end, col_end = view.rowcol(region.b)
+        line_end += 1
+        col_end += 1
+
+        variables['line_begin'] = str(line_begin)
+        variables['col_begin'] = str(col_begin)
+        variables['line_end'] = str(line_end)
+        variables['col_end'] = str(col_end)
         variables['line'] = variables['line_begin']
+        variables['col'] = variables['col_begin']
 
         return variables

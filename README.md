@@ -102,22 +102,25 @@ All apps defined in the plugin settings are listed if you run *External Tool* vi
 
 Along to all your system environment variables the following variables are getting expanded too:
 
-|      Variable      |                          Description                                    |
-|--------------------|-------------------------------------------------------------------------|
-| $file              | The full path to the current file, e.g., C:\Files\Chapter1.txt          |
-| $file_path         | The directory of the current file, e.g., C:\Files                       |
-| $file_extension    | The name portion of the current file, e.g., txt                         |
-| $file_base_name    | The name only portion of the current file, e.g., Document               |
-| $packages          | The full path to the Packages folder                                    |
-| $folder            | The path to the first folder opened in the current project              |
-| $project           | The full path to the current project file                               |
-| $project_path      | The directory of the current project file                               |
-| $project_name      | The name portion of the current project file                            |
-| $project_extension | The extension portion of the current project file                       |
-| $project_base_name | The name-only portion of the current project file                       |
-| $line_begin        | The current line of the current file or the first line of the selection |
-| $line_end          | The current line of the current file or the last line of the selection  |
-| $line              | Same as $line_begin                                                     |
+|      Variable      |                          Description                                        |
+|--------------------|-----------------------------------------------------------------------------|
+| $file              | The full path to the current file, e.g., C:\Files\Chapter1.txt              |
+| $file_path         | The directory of the current file, e.g., C:\Files                           |
+| $file_extension    | The name portion of the current file, e.g., txt                             |
+| $file_base_name    | The name only portion of the current file, e.g., Document                   |
+| $packages          | The full path to the Packages folder                                        |
+| $folder            | The path to the first folder opened in the current project                  |
+| $project           | The full path to the current project file                                   |
+| $project_path      | The directory of the current project file                                   |
+| $project_name      | The name portion of the current project file                                |
+| $project_extension | The extension portion of the current project file                           |
+| $project_base_name | The name-only portion of the current project file                           |
+| $line_begin        | The current line of the current file or the first line of the selection     |
+| $line_end          | The current line of the current file or the last line of the selection      |
+| $col_begin         | The current column of the current file or the first column of the selection |
+| $col_end           | The current column of the current file or the last column of the selection  |
+| $line              | Same as $line_begin                                                         |
+| $col               | Same as $col_begin                                                          |
 
 Placeholder variables are supported too:
 
